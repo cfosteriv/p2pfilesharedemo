@@ -1,0 +1,31 @@
+# macOS
+.DS_Store
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Package.resolved
+
+# Xcode
+DerivedData/
+xcuserdata/
+*.xcuserstate
+*.xccheckout
+*.xcscmblueprint
+
+# Visual Studio / .NET
+.vs/
+bin/
+obj/
+publish/
+**/publish/
+TestResults/
+*.user
+*.suo
+
+# Local configuration and generated state
+*.pfx
+*.p12
+*.cer
+*.key
+*.log

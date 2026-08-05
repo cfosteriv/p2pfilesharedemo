@@ -1,0 +1,708 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D5A9B6D3023BA6B00807F50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D5A9B5B3023B7E800807F50 /* Assets.xcassets */; };
+		6D5A9B6E3023BA6B00807F50 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5A9B5C3023B7E800807F50 /* ContentView.swift */; };
+		6D5A9B6F3023BA6B00807F50 /* DemoBrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5A9B5D3023B7E800807F50 /* DemoBrowserView.swift */; };
+		6D5A9B703023BA6B00807F50 /* DemoControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5A9B5E3023B7E800807F50 /* DemoControllerFactory.swift */; };
+		6D5A9B713023BA6B00807F50 /* DemoDebugResetCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5A9B5F3023B7E800807F50 /* DemoDebugResetCoordinator.swift */; };
+		6D5A9B723023BA6B00807F50 /* DemoLocalDocumentsDestinationResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5A9B603023B7E800807F50 /* DemoLocalDocumentsDestinationResolver.swift */; };
+		6D5A9B733023BA6B00807F50 /* DemoSavedFileReconciler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5A9B613023B7E800807F50 /* DemoSavedFileReconciler.swift */; };
+		6D5A9B743023BA6B00807F50 /* P2PFileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5A9B623023B7E800807F50 /* P2PFileApp.swift */; };
+		6D5A9B753023BA6B00807F50 /* P2PFileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5A9B643023B7F000807F50 /* P2PFileTests.swift */; };
+		6D5A9B763023BA6B00807F50 /* P2PFileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5A9B663023B7F000807F50 /* P2PFileUITests.swift */; };
+		6D5A9B773023BA6B00807F50 /* P2PFileUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5A9B673023B7F000807F50 /* P2PFileUITestsLaunchTests.swift */; };
+		6D5A9B783023BA6B00807F50 /* P2PFileSharingSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 6D5A9B7A3023BA6B00807F50 /* P2PFileSharingSDK */; };
+		6D5A9B793023BA6B00807F50 /* P2PFileSharingSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 6D5A9B7B3023BA6B00807F50 /* P2PFileSharingSDK */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6DE4305B30226AEF003B3A64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DE4304330226AEE003B3A64 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DE4304A30226AEE003B3A64;
+			remoteInfo = P2PFileDemo;
+		};
+		6DE4306530226AEF003B3A64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DE4304330226AEE003B3A64 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DE4304A30226AEE003B3A64;
+			remoteInfo = P2PFileDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6D5A9B5B3023B7E800807F50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D5A9B5C3023B7E800807F50 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6D5A9B5D3023B7E800807F50 /* DemoBrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoBrowserView.swift; sourceTree = "<group>"; };
+		6D5A9B5E3023B7E800807F50 /* DemoControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoControllerFactory.swift; sourceTree = "<group>"; };
+		6D5A9B5F3023B7E800807F50 /* DemoDebugResetCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoDebugResetCoordinator.swift; sourceTree = "<group>"; };
+		6D5A9B603023B7E800807F50 /* DemoLocalDocumentsDestinationResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoLocalDocumentsDestinationResolver.swift; sourceTree = "<group>"; };
+		6D5A9B613023B7E800807F50 /* DemoSavedFileReconciler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoSavedFileReconciler.swift; sourceTree = "<group>"; };
+		6D5A9B623023B7E800807F50 /* P2PFileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P2PFileApp.swift; sourceTree = "<group>"; };
+		6D5A9B643023B7F000807F50 /* P2PFileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P2PFileTests.swift; sourceTree = "<group>"; };
+		6D5A9B663023B7F000807F50 /* P2PFileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P2PFileUITests.swift; sourceTree = "<group>"; };
+		6D5A9B673023B7F000807F50 /* P2PFileUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P2PFileUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6D5A9B6A3023B9C900807F50 /* P2PFileDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = P2PFileDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D5A9B6B3023B9C900807F50 /* P2PFileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = P2PFileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D5A9B6C3023B9C900807F50 /* P2PFileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = P2PFileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D5A9B703023BE6700807F50 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6DE4304830226AEE003B3A64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D5A9B783023BA6B00807F50 /* P2PFileSharingSDK in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DE4305730226AEF003B3A64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D5A9B793023BA6B00807F50 /* P2PFileSharingSDK in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DE4306130226AEF003B3A64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D5A9B633023B7E800807F50 /* P2PFileDemo */ = {
+			isa = PBXGroup;
+			children = (
+				6D5A9B5B3023B7E800807F50 /* Assets.xcassets */,
+				6D5A9B5C3023B7E800807F50 /* ContentView.swift */,
+				6D5A9B5D3023B7E800807F50 /* DemoBrowserView.swift */,
+				6D5A9B5E3023B7E800807F50 /* DemoControllerFactory.swift */,
+				6D5A9B5F3023B7E800807F50 /* DemoDebugResetCoordinator.swift */,
+				6D5A9B603023B7E800807F50 /* DemoLocalDocumentsDestinationResolver.swift */,
+				6D5A9B613023B7E800807F50 /* DemoSavedFileReconciler.swift */,
+				6D5A9B623023B7E800807F50 /* P2PFileApp.swift */,
+			);
+			path = P2PFileDemo;
+			sourceTree = "<group>";
+		};
+		6D5A9B653023B7F000807F50 /* P2PFileDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				6D5A9B643023B7F000807F50 /* P2PFileTests.swift */,
+			);
+			path = P2PFileDemoTests;
+			sourceTree = "<group>";
+		};
+		6D5A9B683023B7F000807F50 /* P2PFileDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6D5A9B663023B7F000807F50 /* P2PFileUITests.swift */,
+				6D5A9B673023B7F000807F50 /* P2PFileUITestsLaunchTests.swift */,
+			);
+			path = P2PFileDemoUITests;
+			sourceTree = "<group>";
+		};
+		6D5A9B7C3023BA6B00807F50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D5A9B6A3023B9C900807F50 /* P2PFileDemo.app */,
+				6D5A9B6B3023B9C900807F50 /* P2PFileTests.xctest */,
+				6D5A9B6C3023B9C900807F50 /* P2PFileUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DE4304230226AEE003B3A64 = {
+			isa = PBXGroup;
+			children = (
+				6D5A9B703023BE6700807F50 /* README.md */,
+				6D5A9B633023B7E800807F50 /* P2PFileDemo */,
+				6D5A9B653023B7F000807F50 /* P2PFileDemoTests */,
+				6D5A9B683023B7F000807F50 /* P2PFileDemoUITests */,
+				6D5A9B7C3023BA6B00807F50 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6DE4304A30226AEE003B3A64 /* P2PFileDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DE4306E30226AEF003B3A64 /* Build configuration list for PBXNativeTarget "P2PFileDemo" */;
+			buildPhases = (
+				6DE4304730226AEE003B3A64 /* Sources */,
+				6DE4304830226AEE003B3A64 /* Frameworks */,
+				6DE4304930226AEE003B3A64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = P2PFileDemo;
+			packageProductDependencies = (
+				6D5A9B7A3023BA6B00807F50 /* P2PFileSharingSDK */,
+			);
+			productName = P2PFileDemo;
+			productReference = 6D5A9B6A3023B9C900807F50 /* P2PFileDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6DE4305930226AEF003B3A64 /* P2PFileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DE4307130226AEF003B3A64 /* Build configuration list for PBXNativeTarget "P2PFileTests" */;
+			buildPhases = (
+				6DE4305630226AEF003B3A64 /* Sources */,
+				6DE4305730226AEF003B3A64 /* Frameworks */,
+				6DE4305830226AEF003B3A64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DE4305C30226AEF003B3A64 /* PBXTargetDependency */,
+			);
+			name = P2PFileTests;
+			packageProductDependencies = (
+				6D5A9B7B3023BA6B00807F50 /* P2PFileSharingSDK */,
+			);
+			productName = P2PFileTests;
+			productReference = 6D5A9B6B3023B9C900807F50 /* P2PFileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6DE4306330226AEF003B3A64 /* P2PFileUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DE4307430226AEF003B3A64 /* Build configuration list for PBXNativeTarget "P2PFileUITests" */;
+			buildPhases = (
+				6DE4306030226AEF003B3A64 /* Sources */,
+				6DE4306130226AEF003B3A64 /* Frameworks */,
+				6DE4306230226AEF003B3A64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DE4306630226AEF003B3A64 /* PBXTargetDependency */,
+			);
+			name = P2PFileUITests;
+			packageProductDependencies = (
+			);
+			productName = P2PFileUITests;
+			productReference = 6D5A9B6C3023B9C900807F50 /* P2PFileUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DE4304330226AEE003B3A64 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2620;
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+					6DE4304A30226AEE003B3A64 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					6DE4305930226AEF003B3A64 = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = 6DE4304A30226AEE003B3A64;
+					};
+					6DE4306330226AEF003B3A64 = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = 6DE4304A30226AEE003B3A64;
+					};
+				};
+			};
+			buildConfigurationList = 6DE4304630226AEE003B3A64 /* Build configuration list for PBXProject "P2PFileDemo" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6DE4304230226AEE003B3A64;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				6D5A9B693023B89800807F50 /* XCLocalSwiftPackageReference "P2PFileSharingDemoSDK" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 6D5A9B7C3023BA6B00807F50 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DE4304A30226AEE003B3A64 /* P2PFileDemo */,
+				6DE4305930226AEF003B3A64 /* P2PFileTests */,
+				6DE4306330226AEF003B3A64 /* P2PFileUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6DE4304930226AEE003B3A64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D5A9B6D3023BA6B00807F50 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DE4305830226AEF003B3A64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DE4306230226AEF003B3A64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6DE4304730226AEE003B3A64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D5A9B6E3023BA6B00807F50 /* ContentView.swift in Sources */,
+				6D5A9B6F3023BA6B00807F50 /* DemoBrowserView.swift in Sources */,
+				6D5A9B703023BA6B00807F50 /* DemoControllerFactory.swift in Sources */,
+				6D5A9B713023BA6B00807F50 /* DemoDebugResetCoordinator.swift in Sources */,
+				6D5A9B723023BA6B00807F50 /* DemoLocalDocumentsDestinationResolver.swift in Sources */,
+				6D5A9B733023BA6B00807F50 /* DemoSavedFileReconciler.swift in Sources */,
+				6D5A9B743023BA6B00807F50 /* P2PFileApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DE4305630226AEF003B3A64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D5A9B753023BA6B00807F50 /* P2PFileTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DE4306030226AEF003B3A64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D5A9B763023BA6B00807F50 /* P2PFileUITests.swift in Sources */,
+				6D5A9B773023BA6B00807F50 /* P2PFileUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6DE4305C30226AEF003B3A64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DE4304A30226AEE003B3A64 /* P2PFileDemo */;
+			targetProxy = 6DE4305B30226AEF003B3A64 /* PBXContainerItemProxy */;
+		};
+		6DE4306630226AEF003B3A64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DE4304A30226AEE003B3A64 /* P2PFileDemo */;
+			targetProxy = 6DE4306530226AEF003B3A64 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6DE4306C30226AEF003B3A64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6DE4306D30226AEF003B3A64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		6DE4306F30226AEF003B3A64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "P2PFileDemo-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = P2PFileDemo;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Scan pairing QR codes from the Windows tray application.";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Discover and connect to trusted Windows file-sharing devices on your local network.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.P2PFileSharingDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				XROS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Debug;
+		};
+		6DE4307030226AEF003B3A64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "P2PFileDemo-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = P2PFileDemo;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Scan pairing QR codes from the Windows tray application.";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Discover and connect to trusted Windows file-sharing devices on your local network.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.P2PFileSharingDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				XROS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Release;
+		};
+		6DE4307230226AEF003B3A64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.P2PFileSharingDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/P2PFileDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/P2PFileDemo";
+				XROS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Debug;
+		};
+		6DE4307330226AEF003B3A64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.P2PFileSharingDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/P2PFileDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/P2PFileDemo";
+				XROS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Release;
+		};
+		6DE4307530226AEF003B3A64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.P2PFileSharingDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+				TEST_TARGET_NAME = P2PFileDemo;
+				XROS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Debug;
+		};
+		6DE4307630226AEF003B3A64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.P2PFileSharingDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+				TEST_TARGET_NAME = P2PFileDemo;
+				XROS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6DE4304630226AEE003B3A64 /* Build configuration list for PBXProject "P2PFileDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DE4306C30226AEF003B3A64 /* Debug */,
+				6DE4306D30226AEF003B3A64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DE4306E30226AEF003B3A64 /* Build configuration list for PBXNativeTarget "P2PFileDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DE4306F30226AEF003B3A64 /* Debug */,
+				6DE4307030226AEF003B3A64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DE4307130226AEF003B3A64 /* Build configuration list for PBXNativeTarget "P2PFileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DE4307230226AEF003B3A64 /* Debug */,
+				6DE4307330226AEF003B3A64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DE4307430226AEF003B3A64 /* Build configuration list for PBXNativeTarget "P2PFileUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DE4307530226AEF003B3A64 /* Debug */,
+				6DE4307630226AEF003B3A64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		6D5A9B693023B89800807F50 /* XCLocalSwiftPackageReference "P2PFileSharingDemoSDK" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = P2PFileSharingDemoSDK;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6D5A9B7A3023BA6B00807F50 /* P2PFileSharingSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D5A9B693023B89800807F50 /* XCLocalSwiftPackageReference "P2PFileSharingDemoSDK" */;
+			productName = P2PFileSharingSDK;
+		};
+		6D5A9B7B3023BA6B00807F50 /* P2PFileSharingSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D5A9B693023B89800807F50 /* XCLocalSwiftPackageReference "P2PFileSharingDemoSDK" */;
+			productName = P2PFileSharingSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6DE4304330226AEE003B3A64 /* Project object */;
+}

@@ -1,0 +1,57 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+
+jobs:
+  apple-sdk-tests:
+    name: Apple SDK Tests
+    runs-on: macos-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Run Swift package tests
+        working-directory: Apple/P2PFileDemo/P2PFileSharingDemoSDK
+        run: swift test
+
+  apple-demo-build:
+    name: Apple Demo Build
+    runs-on: macos-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Build iOS demo without signing
+        run: |
+          xcodebuild -project 'Apple/P2PFileDemo/P2PFileDemo.xcodeproj' \
+            -scheme P2PFileDemo \
+            -sdk iphonesimulator \
+            -destination 'generic/platform=iOS Simulator' \
+            -derivedDataPath "$RUNNER_TEMP/P2PFileDemoDerivedData" \
+            build CODE_SIGNING_ALLOWED=NO
+
+  windows-build-and-test:
+    name: Windows Build And Test
+    runs-on: windows-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Restore solution
+        run: dotnet restore Windows/P2PFile.sln
+
+      - name: Build solution
+        run: dotnet build Windows/P2PFile.sln --configuration Release --no-restore
+
+      - name: Run shared-library tests
+        run: dotnet test Windows/P2PFile.Tests/P2PFile.Tests.csproj --configuration Release --no-build

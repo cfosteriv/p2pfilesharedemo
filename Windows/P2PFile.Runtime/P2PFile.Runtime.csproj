@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MeaMod.DNS" Version="1.0.71" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\P2PFile.Infrastructure\P2PFile.Infrastructure.csproj" />
+    <ProjectReference Include="..\P2PFile.Protocol\P2PFile.Protocol.csproj" />
+  </ItemGroup>
+
+</Project>
